@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ojas Gharde</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c585c347e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+    <nav>
+        <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="images/myCv.pdf" download class="btn btn2">Download CV</a>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I am <span>Ojas</span><br> Gharde from INDIA</h1>
+    </div>
+    </div>
+ </div> 
+ 
+ 
+ <!-------------about---------------------->
+
+
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/About_section.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi there! This is Ojas Gharde, your friendly neighborhood coding enthusiast. With a knack for Python, C, C++, and Java, I thrive on unraveling complex puzzles and crafting elegant solutions. Whether it's optimizing algorithms or building robust applications, I'm always up for the challenge.
+
+                    When it comes to game design, I'm your guy. 
+                    <br><br>I wield Unreal Engine 5 with finesse, sculpting immersive worlds and captivating experiences that leave players spellbound. And let's not forget Blender 3D, my trusty companion for bringing intricate models to life with stunning realism.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Major</span><br>Electronics and Telecommunication Engineering</li>
+                            <li><span>Data analyst</span><br>Certified by Google/Coursera</li>
+                            <li><span>Unreal Engine</span><br>Game Developer in Unreal Engine 5.3</li>
+                            <li><span>Blender 3D</span><br>Designing 3D models</li>
+                            <div class="blender">
+                            <a href="https://drive.google.com/drive/folders/1fftgUqfI637xmJsG80LC8X5NIMjQvWRR?usp=sharing"><i class="fa-brands fa-google-drive"></i></a>
+                            <p>Blender Projects</p>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2026</span><br>College Education in Electronics and Telecommunications</li>
+                            <li><span>2023-2024</span><br>Game Developement</li>
+                            <li><span>2023</span><br>Game Developer in Unreal Engine 5.3</li>
+                            <li><span>2023</span><br>Designing 3D models in Blender 3D </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>2026</span><br>BTECH from MIT Academy of Engineering,Alandi</li>
+                            <li><span>2024</span><br>Completed Google's "Share Data through Visualization"</li>
+                            <li><span>2024</span><br>Completed Google's "Analyse Data to Answer Questions"</li>
+                            <li><span>2024</span><br>Completed Google's "Process data from Dirty to Clean"</li>
+                            <li><span>2024</span><br>Completed Google's "Create Data Everywhere"</li>
+                            <li><span>2024</span><br>Completed Google's "Ask Questions and Make Data-Driven Decisions"</li>
+                            <li><span>2024</span><br>Completed Google's Foundations: Data, Data Everywhere</li>
+                            <li><span>2024</span><br>Certificate in "Python for Everybody"</li>
+                            <li><span>2023</span><br>Certificate in "Microsoft Azure Fundamentals"</li>
+                            <li><span>2021</span><br>12th passout(94%) from Nirala College,Nagpur</li>
+                            <li><span>2019</span><br>10th passout(87%) from GMB ENG. MED. Highshool,Arjuni/Morgaon</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2026</span><br>BTECH from MIT Academy of Engineering,Alandi</li>
+                            <li><span>2021</span><br>12th passout(94%) from Nirala College,Nagpur</li>
+                            <li><span>2019</span><br>10th passout(87%) from GMB ENG. MED. Highshool,Arjuni/Morgaon</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+ 
+ <!-------------------sevices------------------------>
+
+
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Developer</k2>
+                <p>Proficient in 
+                Unreal Engine 5.3</p><br>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-unity"></i>
+                <h2>3D artist</k2>
+                <p>Creative artist in
+                3D modeling using Blender</p><br>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i> <i class="fa-brands fa-java"></i> <i class="fa-solid fa-c"></i> <i class="fa-solid fa-code"></i>
+                <h2>Seasoned Coder</k2>
+                <p>Experienced in
+                C, C++, JAVA, Python</p><br>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+ <!-------------------Portfolio--------------------->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/arduinoo.jpg">
+                <div class="layer">
+                    <h3>Arduino Patent Project</h3>
+                    <p>Voice communication between two arduino modules
+                        using two mobile devices</p>
+                    <a href="https://randomnerdtutorials.com/rf-433mhz-transmitter-receiver-module-with-arduino/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/socialmedia.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from Play Store.</p>
+                    <a href="https://www.uptech.team/blog/how-to-make-a-social-media-app"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/tech.jpg">
+                <div class="layer">
+                    <h3>Technical Blog</h3>
+                    <p>A blog related to Digital Systems and Design stating attributes of CMOS and TTL.</p>
+                    <a href="https://bloggingwithog.blogspot.com/2023/09/when-gates-get-crazy-cmos-vs-ttl.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!---------------contact-------------------->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>ojasgharde22@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9405243181</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ojas-gharde-2bb261258"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/Ohasu_22?t=SSqQZ7pfCRfZqfQD9YPPuA&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/og_gharde?igsh=MW5kNzZienh2ZmV1Nw=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/myCv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ojas_Gharde<i class="fa-solid fa-heart"></i>. </p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+ 
+</body>
+</html>
