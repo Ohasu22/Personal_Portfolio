@@ -70,6 +70,9 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color:#ff004f;
 }
+.header-text p span{
+    color:#ff004f;
+}
 /*------------------about------------------*/
 #about{
     padding: 80px;
@@ -134,6 +137,10 @@ nav ul li a:hover::after{
     display: block;
 }
 
+.about-col-2 p span{
+    color:#ff004f;
+}
+
 .blender{
     margin-top: 30px;
 }
@@ -193,7 +200,7 @@ nav ul li a:hover::after{
 .services-list div a{
     text-decoration: none;
     color:#90fc03;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 20px;
     display: inline-block;
 }
