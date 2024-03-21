@@ -1,3 +1,5 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Passion+One:wght@400;700;900&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -43,7 +45,7 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 21px;
     position: relative;
 }
 nav ul li a::after{
@@ -235,7 +237,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#90fc03);
+    background: linear-gradient(rgba(0,0,0,0.6),#c03662);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -345,8 +347,23 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
+form .btn3{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: solid #ff004f;
+    background: transparent;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn3:hover{
+    background: #ff004f;
+}
 
-form .btn2{
+form .btn4{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
@@ -435,3 +452,122 @@ nav .fa-solid{
         font-size: 14px;
     }
 }
+
+/*--------------------top button-------------------*/
+.container2
+{
+    width:600px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    font-family: "Passion One", sans-serif;
+    font-size: 20px;
+}
+.container2 .btn8
+{
+    position:relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+    font-family: "Passion One", sans-serif;
+}
+.container2 .btn8 a{
+    position: relative;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(20px); 
+}
+.container2 .btn8:hover a{
+    letter-spacing: 2px;
+}
+
+.container2 .btn8 a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 50%;
+    height:100%;
+    background: linear-gradient(to left,rgba(255,255,255,0.15),transparent);
+    transform: skew(45deg) translateX(0);
+    transition: 0.5s;
+}
+.container2 .btn8:hover a::before
+{
+    transform: skewX(45deg) translateX(200%);
+}
+.container2 .btn8::before
+{
+   content: '';
+   position: absolute;
+   Left: 50%;
+   transform: translateX(-50%); 
+   bottom: -5px;
+   width: 50px;
+   height: 10px;
+   background: rgb(255, 255, 255);
+   border-radius: 10px;
+   transition: 0.5s;
+   transition-delay: 0s;
+}
+.container2 .btn8:hover::before{
+    bottom:0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.15s;
+}
+
+
+.container2 .btn8:hover a::after
+{
+    transform: skewX(45deg) translateX(200%);
+}
+.container2 .btn8::after
+{
+   content: '';
+   position: absolute;
+   Left: 50%;
+   transform: translateX(-50%); 
+   top: -5px;
+   width: 50px;
+   height: 10px;
+   background: rgb(255, 255, 255);
+   border-radius: 10px;
+   transition: 0.5s;
+   transition-delay: 0s;
+}
+.container2 .btn8:hover::after{
+    top:0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.15s;
+}
+.container2 .btn8:nth-child(1)::before,
+.container2 .btn8:nth-child(1)::after
+{
+    background: #ff004f;
+    box-shadow: 0 0 5px #ff004f,
+    0 0 15px #ff004f,
+    0 0 30px #ff004f,
+    0 0 60px #ff004f;
+}
+
