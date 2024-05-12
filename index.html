@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="c9GgJPgUuTqACzGSDMngvCavvMkRJVM-jx8UDwK7MF4" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ojas Gharde</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c585c347e3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="loader_bg">
@@ -30,7 +32,7 @@
             </svg>
         </div>
         
-        <div class="loader">
+        <div class="loader ">
             <svg viewBox="0 0 80 80">
                 <rect x="8" y="8" width="64" height="64"></rect>
             </svg>
@@ -143,22 +145,25 @@
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
-                <i class="fa-solid fa-gamepad"></i>
-                <h2>Game Developer</k2>
+                <img src="images/UnrealEngine.png" > <img src="images/Blender3D.png" >
+                <br>
+                <br>
+                <br>
+                <h2>Dimensional Game Architect</k2>
                 <p>Proficient in 
-                Unreal Engine 5.3</p><br>
+                Unreal Engine 5.3 and Blender 3D</p><br>
                 <a href="https://www.unrealengine.com/en-US/blog/unreal-engine-5-3-is-now-available">Learn more</a>
             </div>
             <div>
-                <i class="fa-brands fa-unity"></i>
-                <h2>3D artist</k2>
-                <p>Creative artist in
-                3D modeling using Blender</p><br>
+                <i class="fa-brands fa-google"></i> <i class="fa-solid fa-magnifying-glass-chart"></i> 
+                <h2>Data Analytics Strategist</k2>
+                <p>Google certified
+                Data analyst</p><br>
                 <a href="https://www.blender.org/features/">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-python"></i> <i class="fa-brands fa-java"></i> <i class="fa-solid fa-c"></i> <i class="fa-solid fa-code"></i>
-                <h2>Seasoned Coder</k2>
+                <h2>Maven of Multiple Languages</k2>
                 <p>Experienced in
                 C, C++, JAVA, Python</p><br>
                 <a href="#">Learn more</a>
@@ -268,6 +273,11 @@
     setTimeout(function(){
         $('.loader_bg').fadeToggle();
     }, 2000);
+</script>
+<script>
+    setTimeout(function(){
+        $('.loader_text').fadeToggle();
+    }, 500);
 </script>
 </body>
 </html>
